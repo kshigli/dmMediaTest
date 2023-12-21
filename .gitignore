@@ -1,0 +1,12 @@
+.package-lock.json
+.env
+/node_modules
+/allure-results
+/allure-report
+!/allure-report/index.html
+!/allure-report/favicon.ico
+!/allure-report/status.json
+yarn-error.log
+.vs
+dist/
+all
