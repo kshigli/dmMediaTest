@@ -46,4 +46,3 @@ When(/^video is finished$/, {}, async () => {
 Then(/^next video should autoplay$/, {}, async () => {    
     await videoPlayer.waitUntilNextVideoPlay();
 });
-

@@ -11,3 +11,11 @@ Feature: Video player
         And user click on the speaker icon again to unmute the video
         When video is finished
         Then next video should autoplay
+
+    Scenario: Get Position and Points for a given team
+        Given User Navigate to the Daily Mail Page
+        And user click on Sport menu and scroll down to the Premier League table
+        And user click on the View all tables       
+        Then Position & Points for a given team is retrieved
+            | team        |
+            | Man City    |

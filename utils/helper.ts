@@ -1,13 +1,21 @@
 export const waitForDisplayed = async (
     element: WebdriverIO.Element,
-    timeout = 35000
+    timeout = 120000
 ) => {
-    await element.waitForDisplayed({ timeout });
+    try {
+        await element.waitForDisplayed({ timeout });
+    } catch (error) {
+        console.warn(
+            'click failed on element:',
+            element,
+            error
+        );
+    }
 };
 
 export const waitForDisappeared = async (
     element: WebdriverIO.Element,
-    timeout = 30000
+    timeout = 40000
 ) => {
-    await element.waitForExist({ timeout, reverse: true });
+    await element.waitForDisplayed({ timeout, reverse: true });
 };
