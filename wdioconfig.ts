@@ -1,3 +1,5 @@
+import allureReporter from '@wdio/allure-reporter';
+
 export const config = {
     runner: 'local',
     specs: [
@@ -47,6 +49,7 @@ export const config = {
         }
     },
 
+    
     reporters: [
         [
             'allure',
@@ -54,6 +57,7 @@ export const config = {
                 outputDir: 'allure-results',
                 disableWebdriverStepsReporting: true,
                 disableWebdriverScreenshotsReporting: false,
+                useCucumberStepReporter: true,
                 timeout: 180000
             }
         ],
@@ -62,9 +66,9 @@ export const config = {
 
 
     afterStep: async function (
-        _details: any, // details
+        _details: any,
         _context: any,
-        { error, result, duration, passed, retries }: any // result
+        { error, result, duration, passed, retries }: any
     ) { 
         if (error){
             await browser.takeScreenshot(); 

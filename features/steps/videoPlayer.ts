@@ -1,17 +1,10 @@
 import { Given, When, Then } from '@cucumber/cucumber';
-import { waitForDisplayed } from '../../utils/helper';
-
 import { videoPlayerPage } from '../../pages/videoPlayerPage';
 
 const videoPlayer = new videoPlayerPage();
 
-const challengingDOMLink = '//a[text()="Challenging DOM"]';
-let buttonIdsBeforeClick: any;
-
 Given(/^User Navigate to the Daily Mail Video Page$/, {}, async () => {  
-    //const challengingDOMSelector = await $(challengingDOMLink);
     await browser.url('https://www.dailymail.co.uk/video/index.html');    
-    //await waitForDisplayed(challengingDOMSelector);
 });
 
 When(/^accept cookies$/, {}, async () => {    
@@ -23,6 +16,33 @@ When(/^user click on Video in page to begin playback$/, {}, async () => {
 });
 
 When(/^user click video again to pause playback$/, {}, async () => {    
-    await videoPlayer.clickPlayPauseButton();  
+    await videoPlayer.clickPlayPauseButton();
+
 });
 
+When(/^user click on the forward arrow to change to the next video$/, {}, async () => {    
+    await videoPlayer.clickForwardArrowButton();
+});
+
+When(/^user click on the back arrow to navigate to the previous video$/, {}, async () => {    
+    await videoPlayer.clickBackArrowButton(); 
+    await videoPlayer.clickPlayPauseButton();   
+});
+
+When(/^user click on the speaker icon to mute the video$/, {}, async () => {    
+    await videoPlayer.muteUnMuteVideoButton();    
+});
+
+When(/^user click on the speaker icon again to unmute the video$/, {}, async () => {    
+    await videoPlayer.muteUnMuteVideoButton();    
+});
+
+When(/^video is finished$/, {}, async () => {   
+    await videoPlayer.clickPlayPauseButton(); 
+    await videoPlayer.waitUntilVideoFinishes();
+    await videoPlayer.waitUntilNextVideoPlay();
+});
+
+Then(/^next video should autoplay$/, {}, async () => {    
+    await videoPlayer.waitUntilNextVideoPlay();
+});
