@@ -1,6 +1,8 @@
 import allureReporter from '@wdio/allure-reporter';
 
 export const config = {
+    user: 'mailqatest_cXsLbu',
+    key: 'TEPExGhJQfYqSq4qteYf',
     runner: 'local',
     specs: [
         [
@@ -40,7 +42,7 @@ export const config = {
         require: ['./features/steps/*.ts'],
         timeout: 180000
     },
-    services: ['chromedriver'],
+    services: ['browserstack'],
     autoCompileOpts: {
         autoCompile: true,
         tsNodeOpts: {
