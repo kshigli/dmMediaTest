@@ -10,3 +10,6 @@ yarn-error.log
 .vs
 dist/
 all
+browserstack.err
+local.log
+logs/bstack-wdio-service.log
