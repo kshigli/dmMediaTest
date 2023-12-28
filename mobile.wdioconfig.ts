@@ -2,11 +2,11 @@ import path from "path";
 
 export const config = {
    
-    runner: 'local',
-    user: 'mailqatest_cXsLbu',
-    key: 'TEPExGhJQfYqSq4qteYf',
-    hostname: '0.0.0.0',
-    port: 4724,
+ //   runner: 'local',
+    user: process.env.BROWSERSTACK_USERNAME || 'mailqatest_cXsLbu',
+    key: process.env.BROWSERSTACK_ACCESS_KEY || 'TEPExGhJQfYqSq4qteYf',
+    hostname: 'hub.browserstack.com',
+//    port: 4724,
     specs: [
         [
              './features/**/androidTest.feature'
@@ -16,9 +16,9 @@ export const config = {
     
     capabilities: [
         {
-            platformName: "Android",
-            "appium:deviceName": "emulator-5554",
-            "appium:platformVersion": "12.0",
+            platformName: "android",
+            "appium:deviceName": "Google Pixel 7 Pro",
+            "appium:platformVersion": "13.0",
             "appium:automationName": "UIAutomator2",
             "appium:app": path.join(process.cwd(), "./app/android/8.2.2.20 (744802).apk"),
             "appium:autoGrantPermissions": true
@@ -36,14 +36,14 @@ export const config = {
     },
     services: [
         [
-            'appium',
-            {
-                args: {
-                },
-                command: 'appium'
-            }
+          'browserstack',
+          {
+            app: './app/android/8.2.2.20 (744802).apk',
+            buildIdentifier: "${BUILD_NUMBER}",
+            browserstackLocal: true
+          },
         ]
-    ],
+      ],
     autoCompileOpts: {
         autoCompile: true,
         tsNodeOpts: {
