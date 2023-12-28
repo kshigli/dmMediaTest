@@ -7,6 +7,10 @@ Given(/^User launch the app$/, {}, async () => {
     await android.launchApp()
 });
 
+Given(/^user viewing the downloaded edition$/, {}, async () => {  
+    //no need to implement as the user is already viewing the edition
+});
+
 When(/^press continue$/, {}, async () => {   
     await android.clickCont();    
 });
@@ -21,4 +25,12 @@ When(/^sign in with valid credentials$/, {}, async () => {
 
 Then(/^edition is downloaded$/, {}, async () => {   
     await android.waitForeditionToDownload();
+});
+
+When(/^user opens Gallery view and traverse through all gallery images$/, {}, async () => {   
+    await android.openGalleryView();
+});
+
+Then(/^on last image user close the image by clicking on Close button to return to ALB$/, {}, async () => {   
+    await android.closeImage();
 });
