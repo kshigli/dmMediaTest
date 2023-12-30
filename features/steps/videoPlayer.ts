@@ -12,7 +12,7 @@ When(/^accept cookies$/, {}, async () => {
 });
 
 When(/^user click on Video in page to begin playback$/, {}, async () => {    
-    await videoPlayer.clickPlayButton();
+   //video will auto play, clicking on again will see different behaviours
 });
 
 When(/^user click video again to pause playback$/, {}, async () => {    
@@ -26,7 +26,8 @@ When(/^user click on the forward arrow to change to the next video$/, {}, async 
 
 When(/^user click on the back arrow to navigate to the previous video$/, {}, async () => {    
     await videoPlayer.clickBackArrowButton(); 
-    await videoPlayer.clickPlayPauseButton();   
+    await videoPlayer.clickPlayPauseButton();  
+      
 });
 
 When(/^user click on the speaker icon to mute the video$/, {}, async () => {    

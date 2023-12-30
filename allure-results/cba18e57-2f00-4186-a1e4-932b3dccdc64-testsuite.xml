@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1703940292897' stop='1703940416034'>
+    <name>Mobile App test scenarios</name>
+    <title>Mobile App test scenarios</title>
+    <test-cases>
+        <test-case start='1703940292922' status='passed' stop='1703940386886'>
+            <name>Verify the Newspaper edition is downloadable.</name>
+            <title>Verify the Newspaper edition is downloadable.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='feature' value='Mobile App test scenarios'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='emulator-5554 12.0-12'/>
+            </parameters>
+            <steps>
+                <step start='1703940292925' status='passed' stop='1703940299181'>
+                    <name>Given User launch the app</name>
+                    <title>Given User launch the app</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703940299181' status='passed' stop='1703940310744'>
+                    <name>And press continue</name>
+                    <title>And press continue</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703940310744' status='passed' stop='1703940357238'>
+                    <name>And scroll down to Recent issues on Newspaper tab and tap on `See more`</name>
+                    <title>And scroll down to Recent issues on Newspaper tab and tap on `See more`</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703940357238' status='passed' stop='1703940373489'>
+                    <name>And sign in with valid credentials</name>
+                    <title>And sign in with valid credentials</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703940373490' status='passed' stop='1703940386884'>
+                    <name>Then edition is downloaded</name>
+                    <title>Then edition is downloaded</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1703940386887' status='passed' stop='1703940416034'>
+            <name>Verify the Images on Gallery section</name>
+            <title>Verify the Images on Gallery section</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='feature' value='Mobile App test scenarios'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='emulator-5554 12.0-12'/>
+            </parameters>
+            <steps>
+                <step start='1703940386888' status='passed' stop='1703940386890'>
+                    <name>Given user viewing the downloaded edition</name>
+                    <title>Given user viewing the downloaded edition</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703940386891' status='passed' stop='1703940415936'>
+                    <name>When user opens Gallery view and traverse through all gallery images</name>
+                    <title>When user opens Gallery view and traverse through all gallery images</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703940415936' status='passed' stop='1703940416033'>
+                    <name>Then on last image user close the image by clicking on Close button to return to ALB</name>
+                    <title>Then on last image user close the image by clicking on Close button to return to ALB</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

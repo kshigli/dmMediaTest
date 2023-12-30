@@ -42,7 +42,7 @@ export const config = {
         require: ['./features/steps/*.ts'],
         timeout: 180000
     },
-    services: ['browserstack'],
+    services: ['chromedriver'],
     autoCompileOpts: {
         autoCompile: true,
         tsNodeOpts: {

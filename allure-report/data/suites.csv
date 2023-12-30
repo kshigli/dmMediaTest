@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Dec 30 13:03:47 GMT 2023","Sat Dec 30 13:04:14 GMT 2023","27028","","Web App test scenarios","","Web App test scenarios","Get Position and Points for a given team","Get Position and Points for a given team",""
+"passed","Sat Dec 30 12:46:26 GMT 2023","Sat Dec 30 12:46:56 GMT 2023","29147","","Mobile App test scenarios","","Mobile App test scenarios","Verify the Images on Gallery section","Verify the Images on Gallery section",""
+"passed","Sat Dec 30 13:02:11 GMT 2023","Sat Dec 30 13:03:47 GMT 2023","95686","","Web App test scenarios","","Web App test scenarios","Verify the video player functionality","Verify the video player functionality",""
+"passed","Sat Dec 30 12:44:52 GMT 2023","Sat Dec 30 12:46:26 GMT 2023","93964","","Mobile App test scenarios","","Mobile App test scenarios","Verify the Newspaper edition is downloadable.","Verify the Newspaper edition is downloadable.",""

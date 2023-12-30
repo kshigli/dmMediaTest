@@ -6,7 +6,7 @@
   "author": "Kiran Shigli <kshigli@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "wdio run wdioconfig.ts",
+    "web": "wdio run wdioconfig.ts",
     "mobile": "wdio run mobile.wdioconfig.ts"
   },
   "dependencies": {

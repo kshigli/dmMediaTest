@@ -1,4 +1,4 @@
-Feature: Video player 
+Feature: Web App test scenarios
 
     Scenario: Verify the video player functionality
         Given User Navigate to the Daily Mail Video Page
