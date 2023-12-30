@@ -1,0 +1,125 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1703941331342' stop='1703941454087'>
+    <name>Web App test scenarios</name>
+    <title>Web App test scenarios</title>
+    <test-cases>
+        <test-case start='1703941331371' status='passed' stop='1703941427057'>
+            <name>Verify the video player functionality</name>
+            <title>Verify the video player functionality</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='feature' value='Web App test scenarios'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-120.0.6099.130'/>
+            </parameters>
+            <steps>
+                <step start='1703941331374' status='passed' stop='1703941334460'>
+                    <name>Given User Navigate to the Daily Mail Video Page</name>
+                    <title>Given User Navigate to the Daily Mail Video Page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703941334461' status='passed' stop='1703941334745'>
+                    <name>And accept cookies</name>
+                    <title>And accept cookies</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703941334745' status='passed' stop='1703941334745'>
+                    <name>And user click on Video in page to begin playback</name>
+                    <title>And user click on Video in page to begin playback</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703941334746' status='passed' stop='1703941338226'>
+                    <name>And user click video again to pause playback</name>
+                    <title>And user click video again to pause playback</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703941338226' status='passed' stop='1703941343059'>
+                    <name>And user click on the forward arrow to change to the next video</name>
+                    <title>And user click on the forward arrow to change to the next video</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703941343059' status='passed' stop='1703941360522'>
+                    <name>And user click on the back arrow to navigate to the previous video</name>
+                    <title>And user click on the back arrow to navigate to the previous video</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703941360522' status='passed' stop='1703941363700'>
+                    <name>And user click on the speaker icon to mute the video</name>
+                    <title>And user click on the speaker icon to mute the video</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703941363700' status='passed' stop='1703941366835'>
+                    <name>And user click on the speaker icon again to unmute the video</name>
+                    <title>And user click on the speaker icon again to unmute the video</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703941366835' status='passed' stop='1703941427024'>
+                    <name>When video is finished</name>
+                    <title>When video is finished</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703941427025' status='passed' stop='1703941427055'>
+                    <name>Then next video should autoplay</name>
+                    <title>Then next video should autoplay</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1703941427058' status='passed' stop='1703941454086'>
+            <name>Get Position and Points for a given team</name>
+            <title>Get Position and Points for a given team</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='feature' value='Web App test scenarios'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-120.0.6099.130'/>
+            </parameters>
+            <steps>
+                <step start='1703941427059' status='passed' stop='1703941439469'>
+                    <name>Given User Navigate to the Daily Mail Page</name>
+                    <title>Given User Navigate to the Daily Mail Page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703941439469' status='passed' stop='1703941451204'>
+                    <name>And user click on Sport menu and scroll down to the Premier League table</name>
+                    <title>And user click on Sport menu and scroll down to the Premier League table</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703941451205' status='passed' stop='1703941453973'>
+                    <name>And user click on the View all tables</name>
+                    <title>And user click on the View all tables</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1703941453974' status='passed' stop='1703941454085'>
+                    <name>Then Position &amp; Points for a given team is retrieved</name>
+                    <title>Then Position &amp; Points for a given team is retrieved</title>
+                    <attachments>
+                        <attachment title='Data Table' source='c0cf360e-b352-4151-9ccf-c0f045a107d6-attachment.csv' type='text/csv' size='14'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

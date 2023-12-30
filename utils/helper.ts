@@ -19,3 +19,4 @@ export const waitForDisappeared = async (
 ) => {
     await element.waitForDisplayed({ timeout, reverse: true });
 };
+

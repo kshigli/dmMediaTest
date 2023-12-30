@@ -15,7 +15,7 @@ When(/^press continue$/, {}, async () => {
     await android.clickCont();    
 });
 
-When(/^scroll down to Recent issues on Newspaper tab and tap on `See more` button$/, {}, async () => {   
+When(/^scroll down to Recent issues on Newspaper tab and tap on `See more`$/, {}, async () => {   
     await android.browseSeeMoreOnNewspaperTab()
 });
 
