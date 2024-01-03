@@ -43,7 +43,15 @@ export const config = {
         require: ['./features/steps/*.ts'],
         timeout: 180000
     },
-    services: ['chromedriver'],
+    services: [
+        [
+          'browserstack',
+          {
+            buildIdentifier: "${BUILD_NUMBER}",
+            browserstackLocal: true
+          },
+        ]
+      ],
     autoCompileOpts: {
         autoCompile: true,
         tsNodeOpts: {
