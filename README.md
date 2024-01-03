@@ -1,7 +1,7 @@
 # DMGMedia tests for Web And Mobile
 
 ## Pre-requistes
-1. Make sure yarn is installed locally before proceeding to step 3
+1. Make sure yarn is installed locally
 2. A valid Browserstack account with both `Web - Automate` and `App - App Automate` features enabled
 
 ## Test execution
