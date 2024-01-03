@@ -1,14 +1,23 @@
-# dmgMediaTest for Web And Mobile tests
-**Instructions to run web and mobile tests**
+# DMGMedia tests for Web And Mobile
 
-Make sure yarn is installed locally
+## Pre-requistes
+1. Make sure yarn is installed locally before proceeding to step 3
+2. A valid Browserstack account with both `Web - Automate` and `App - App Automate` features enabled
 
-Open terminal and navigate to the root directory this code
+## Test execution
+1. Checkout the entire code a local folder
+2. Install the packages using yarn
 
-Run #yarn and #yarn tsc and make sure it succeeds without any errors
+## Web test execution
+1. Open terminal and navigate to the root directory this code
+2. Run `yarn web` to trigger web test
 
-In the same terminal, run #yarn web to run web test
+## Mobile test execution
+1. Open terminal and navigate to the root directory this code
+2. Run `yarn mobile` to trigger mobile test
 
-run #yarn mobile to run mobile test 
+## Reporting
+Use this command to genrate allure reports upon test execution.
+`allure generate ./allure-results && allure open`
 
-You should see tests starts running in BrowserStack (as long as the browserstack account has appropriate privileges)
+
