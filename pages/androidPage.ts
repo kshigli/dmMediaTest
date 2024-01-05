@@ -113,6 +113,7 @@ export class androidPage {
         ]);
     }
 
+    /* swipe to element until its displayed */
     async swipeToElement(locator: string, numberOfSwipes = 1, startXPercentage : any, endXPercentage: any, startYPercentage: any, endYPercentage: any) {
         let isLocDisplayed = await $(locator).isDisplayed()
                 let count = 0;
@@ -122,6 +123,8 @@ export class androidPage {
             isLocDisplayed = await $(locator).isDisplayed()
         }       
     }
+
+    /* swipe horizontally */
     async swipeRightToElement(locator: string, numberOfSwipesToCheck = 1, startPoint = swipePercentages.RIGHT.fromX, endPoint = swipePercentages.RIGHT.toX) {
         await this.swipeToElement(locator, numberOfSwipesToCheck, startPoint, endPoint, swipePercentages.RIGHT.fromY, swipePercentages.RIGHT.toY);
     }
