@@ -3,7 +3,7 @@ Feature: Mobile App test scenarios
     Scenario: Verify the Newspaper edition is downloadable.
         Given User launch the app
         And press continue
-        And scroll down to Recent issues on Newspaper tab and tap on `See more`
+        And scroll down to Recent issues on Newspaper tab and tap on See more
         And sign in with valid credentials
         Then edition is downloaded
 
