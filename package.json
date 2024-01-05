@@ -25,7 +25,7 @@
     "appium": "2.2.1",
     "appium-adb": "^11.0.8",
     "appium-doctor": "^1.16.2",
-    "appium-uiautomator2-driver": "^2.35.0",
+    "appium-uiautomator2-driver": "2.29.11",
     "assert": "2.1.0",
     "chromedriver": "^120.0.0",
     "strip-ansi": "^7.1.0",
